@@ -6,6 +6,7 @@
 
 ---
 
+
 ##  Features
 
 - **Phone Validator** – Detect Nigerian network providers (MTN, Airtel, Glo, 9mobile) from phone prefixes.  
