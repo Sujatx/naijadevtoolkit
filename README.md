@@ -6,7 +6,7 @@
 
 ---
 
-## 🚀 Features
+##  Features
 
 - **Phone Validator** – Detect Nigerian network providers (MTN, Airtel, Glo, 9mobile) from phone prefixes.  
 - **Naira Formatter** – Convert numbers into proper Naira currency format (`₦ 1,234.00`).  
