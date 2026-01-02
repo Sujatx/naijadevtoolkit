@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Naija Dev Toolkit</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./wave.png">
+  <meta name="author" content="Feranmi">
+  <meta name="copyright" content="© 2026 Feranmi. All rights reserved.">
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-left">
+      <h1>🇳🇬 Naija Dev Toolkit</h1>
+      <p id="sub-header">Everyday utilities built for Nigerian developers.</p>
+    </div>
+    <div class="hero-actions">
+      <button id="theme-toggle" class="icon-btn">
+        <i class="fas fa-moon"></i>
+      </button>
+      <button id="lang-btn" class="pill-btn" onclick="togglePidgin()">
+        Switch to Pidgin
+      </button>
+    </div>
+  </header>
+  <main class="tools">
+    <section class="tool-card">
+      <div class="tool-icon"><i class="fas fa-phone"></i></div>
+      <h3>Phone Validator</h3>
+      <input id="phoneInput" maxlength="11" placeholder="0803..." />
+      <div id="phoneResult" class="status-box hidden"></div>
+    </section>
+    <section class="tool-card">
+      <div class="tool-icon"><i class="fas fa-naira-sign"></i></div>
+      <h3>Naira Formatter</h3>
+      <input id="nairaInput" type="number" placeholder="Enter amount" />
+      <div id="nairaResult" class="big-display">₦0.00</div>
+    </section>
+    <section class="tool-card">
+      <div class="tool-icon"><i class="fas fa-building-columns"></i></div>
+      <h3>Bank Codes</h3>
+      <div class="custom-select">
+        <input id="bankSearch" placeholder="Search bank..." />
+        <div id="bankList" class="dropdown-list"></div>
+      </div>
+    </section>
+    <section class="tool-card">
+      <div class="tool-icon"><i class="fas fa-id-card"></i></div>
+      <h3>ID Validator</h3>
+      <input id="idInput" maxlength="11" placeholder="BVN or NIN" />
+      <div id="idResult" class="status-hint">Waiting for input…</div>
+    </section>
+  </main>
+
+  <div id="toast" class="toast">Copied!</div>
+
+  <footer>
+    <p>Open-source • Built for Naija devs 🇳🇬</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
